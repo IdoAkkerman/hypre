@@ -1446,6 +1446,7 @@ HYPRE_Int hypre_BoomerAMGBuildNonGalerkinCoarseOperator( hypre_ParCSRMatrix **RA
 hypre_CSRMatrix *hypre_ExchangeRAPData ( hypre_CSRMatrix *RAP_int , hypre_ParCSRCommPkg *comm_pkg_RT );
 HYPRE_Int hypre_BoomerAMGBuildCoarseOperator ( hypre_ParCSRMatrix *RT , hypre_ParCSRMatrix *A , hypre_ParCSRMatrix *P , hypre_ParCSRMatrix **RAP_ptr );
 HYPRE_Int hypre_BoomerAMGBuildCoarseOperatorKT ( hypre_ParCSRMatrix *RT , hypre_ParCSRMatrix *A , hypre_ParCSRMatrix *P , HYPRE_Int keepTranspose, hypre_ParCSRMatrix **RAP_ptr );
+HYPRE_Int hypre_BoomerAMGBuildCoarseOperatorKTS ( hypre_ParCSRMatrix *RT , hypre_ParCSRMatrix *A , hypre_ParCSRMatrix *P , HYPRE_Int keepTranspose, HYPRE_Int square, hypre_ParCSRMatrix **RAP_ptr );
 
 /* par_rap_communication.c */
 HYPRE_Int hypre_GetCommPkgRTFromCommPkgA ( hypre_ParCSRMatrix *RT , hypre_ParCSRMatrix *A , HYPRE_Int *fine_to_coarse_offd );
